@@ -1,0 +1,154 @@
+:root {
+  /* Palette */
+  --color-black-light: #313131;
+  --color-black: #151515;
+  --color-black-fade: rgba(21, 21, 21, 0.6);
+  --color-yellow: #fbce51;
+  --color-white: #ffffff;
+  --color-white-fade: rgba(255, 255, 255, 0.9);
+  --color-blue: #3057a2;
+  --color-red: #f54932;
+  --color-grey: #d6d6d6;
+  --color-grey-light: #d0d0d0;
+  --color-beige: #e9ded4;
+  --color-transparent: transparent;
+
+  /* Themes */
+  --text-color-primary: var(--color-black-light);
+  --text-color-secondary: var(--color-black-fade);
+  --text-color-inverted: var(--color-white);
+  --text-color-accent-primary: var(--color-red);
+  --text-color-accent-secondary: var(--color-blue);
+
+  --bg-color-primary: var(--color-white);
+  --bg-color-secondary: var(--color-beige);
+  --bg-color-accent: var(--color-red);
+
+  --btn-bg: var(--color-black);
+  --btn-bg-hover: var(--color-yellow);
+  --btn-border-color: var(--color-black);
+  --btn-border-color-hover: var(--color-yellow);
+  --btn-text-color: var(--text-color-inverted);
+  --btn-text-color-hover: var(--text-color-primary);
+
+  --btn-secondary-bg: var(--color-transparent);
+  --btn-secondary-bg-hover: var(--color-black);
+  --btn-secondary-border-color: var(--color-black);
+  --btn-secondary-border-color-hover: var(--color-black);
+  --btn-secondary-text-color: var(--text-color-primary);
+  --btn-secondary-text-color-hover: var(--text-color-inverted);
+
+  --btn-accent-bg: var(--color-transparent);
+  --btn-accent-bg-hover: var(--color-blue);
+  --btn-accent-border-color: var(--color-blue);
+  --btn-accent-border-color-hover: var(--color-blue);
+  --btn-accent-text-color: var(--text-color-accent-secondary);
+  --btn-accent-text-color-hover: var(--text-color-inverted);
+
+  --btn-disabled-bg: var(--color-grey);
+  --btn-disabled-border-color: var(--color-grey);
+  --btn-disabled-text-color: var(--color-white-fade);
+
+  --focus-ring-bg: var(--bg-color-primary);
+  --focus-ring-color: var(--color-blue);
+
+  --divider-color: var(--color-grey-light);
+
+  /* Typography */
+  --font-primary: "Golos Text", "Roboto", sans-serif;
+  --font-secondary: "Merriweather", "Times New Roman", serif;
+
+  --font-size-xxs: 16px;
+  --font-size-xs: 18px;
+  --font-size-s: 20px;
+  --font-size-m: 24px;
+  --font-size-l: 28px;
+  --font-size-xl: 36px;
+  --font-size-xxl: 54px;
+  --font-size-xxxl: 60px;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-xs);
+  line-height: 1.2;
+  color: var(--text-color-primary);
+  background-color: var(--bg-color-primary);
+  min-width: 375px;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-secondary);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+cite {
+  font-style: normal;
+}
+
+del {
+  text-decoration-color: var(--color-red);
+}
+
+.text-accent {
+  font-weight: var(--font-weight-bold);
+  color: var(--text-color-accent-primary);
+}
+
+/* Responsive Container */
+.container {
+  --container-max-width: 100%;
+  --container-padding-v: 20px;
+  width: 100%;
+  max-width: var(--container-max-width);
+  padding: 0 var(--container-padding-v);
+  margin: 0 auto;
+}
+
+@media (min-width: 425px) {
+  .container {
+    --container-padding-v: 40px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .container {
+    --container-max-width: 1366px;
+    --container-padding-v: 72px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    --container-max-width: 1600px;
+    --container-padding-v: 190px;
+  }
+}
+
+/* for a11y purpose */
+.visually-hidden {
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
