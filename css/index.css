@@ -993,7 +993,7 @@
     }
   }
 
-  .circle-animation {
+  .header__circle {
     right: 25px;
   }
 
@@ -1045,7 +1045,7 @@
     left: 0;
   }
 
-  .circle-animation {
+  .header__circle {
     right: 152px;
     top: -44px;
   }
