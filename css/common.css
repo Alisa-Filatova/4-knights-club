@@ -87,7 +87,6 @@ body {
   color: var(--text-color-primary);
   background-color: var(--bg-color-primary);
   min-width: 375px;
-  overflow-x: hidden;
 }
 
 h1, h2, h3 {
